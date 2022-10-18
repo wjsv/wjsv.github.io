@@ -2,7 +2,8 @@
 Table of Contents:
     General Page Styles
     Navigation Bar
-    Header
+    Video Background
+    Page Header
 */
 
 /* General Page Styles */
@@ -16,10 +17,18 @@ body {
     padding: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Navigation Bar */
 nav {
     position: absolute;
-    width: 100%;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: #dddddd;
@@ -54,4 +63,20 @@ nav a:active {
     outline: 0;
 }
 
-/* Header */
+/* Video Background */
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/* Page Header */
+
+#page-header {
+    margin-top: 35px;
+    background-color: darkred;
+    height: 100vh;
+}
+
