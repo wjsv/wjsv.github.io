@@ -2,6 +2,7 @@
 Table of Contents:
     General Page Styles
     Navigation Bar
+    Video Background
     Header
 */
 
@@ -54,4 +55,25 @@ nav a:active {
     outline: 0;
 }
 
+/* Video Background */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 /* Header */
+
+#page-header {
+    /*
+    height: 100vh;
+    width: 100vw;
+     */
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
