@@ -1,3 +1,57 @@
-li {
-    float: left;
+/*
+Table of Contents:
+    General Page Styles
+    Navigation Bar
+    Header
+*/
+
+/* General Page Styles */
+html {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #dddddd;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #ffffff;
+}
+
+nav a:hover,
+nav a:active {
+    outline: 0;
+}
+
+/* Header */
