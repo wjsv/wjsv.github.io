@@ -96,7 +96,7 @@ nav a:active {
     z-index: -1;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 999px) {
     #background-video { display: none; }
     body {
         background: url("https://wjsv.github.io/assets/video-background/poster.jpg") no-repeat;
@@ -124,14 +124,14 @@ nav a:active {
     font-size: 100px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 999px) {
     .header-logo {
         margin: auto;
         width: 90vw;
     }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1000px) {
     .header-logo {
         position: absolute;
         top: 50%;
@@ -154,7 +154,7 @@ nav a:active {
     -ms-transform: translate(-50%, -50%);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 999px) {
     .contact-icons {
         display: none;
     }
@@ -196,23 +196,27 @@ nav a:active {
 #listen-live h2 {
     margin: 0;
     padding: 0;
-    transform: translatey(50%);
     text-align: center;
     color: #d4d4d4;
     font-family: sans-serif;
-    font-size: 1.9rem;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 999px) {
     #listen-live {
         margin: auto 5rem;
         height: 5rem;
         width: auto;
         text-align: center;
     }
+
+    #listen-live h2{
+        transform: translatey(1.25rem);
+        -ms-transform: translatey(1.25rem);
+        font-size: 2rem;
+    }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1000px) {
     #listen-live {
         position: absolute;
         margin: 0;
@@ -223,5 +227,10 @@ nav a:active {
         width: 25vw;
         transform: translatey(-50%);
         -ms-transform: translatey(-50%);
+    }
+
+    #listen-live h2{
+        margin-top: 0.75vw;
+        font-size: 3vw;
     }
 }
