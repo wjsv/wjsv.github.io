@@ -27,25 +27,140 @@ body {
 }
 
 /* Blocks */
-/*
 .block {
-    border-radius: 1rem;
+    border-radius: 3rem;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    background-size: cover;
+    background-color: rgba(212,212,212,0.5);
 }
 
 @media (max-width: 999px) {
     .block {
-        width: 90vw;
-        height: 10rem;
-        background-color: red;
+        display: flex;
+        width: 75vw;
+        min-height: 75vw;
+        margin: 4rem auto;
+        box-shadow: inset 0 0 4rem black;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .block:hover,
+    .block:focus,
+    .block:active {
+        box-shadow: inset 0 0 10rem black;
     }
 }
 
 @media (min-width: 1000px) {
-    .quarter-block {
-        display: inline-block;
+    .block {
+        display: inline-flex;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
     }
 }
-*/
+
+.block h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: -2px -2px 0 #d4d4d4, 2px -2px 0 #d4d4d4, -2px 2px 0 #d4d4d4, 2px 2px 0 #d4d4d4;
+    color: #931324;
+}
+
+.block h2 {
+    margin: 0;
+    padding: 1rem 1rem 0.5rem;
+    text-align: left;
+    color: #931324;
+}
+
+.block h3 {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    font-weight: 400;
+    color: #931324;
+}
+
+.block p {
+    margin: 0;
+    padding: 0.5rem 1rem 1rem;
+    text-align: left;
+    color: #931324;
+}
+
+@media (min-width: 1000px) {
+    .quarter-block {
+        margin: 5vw;
+        width: 18vw;
+        min-height: 18vw;
+        box-shadow: inset 0 0 2.5vw black;
+        align-items: center;
+    }
+
+    .quarter-block:hover,
+    .quarter-block:focus,
+    .quarter-block:active {
+        box-shadow: inset 0 0 3vw black;
+    }
+
+    .third-block {
+        margin: 5vw;
+        width: 22.5vw;
+        min-height: 22.5vw;
+        box-shadow: inset 0 0 3vw black;
+        align-items: center;
+    }
+
+    .third-block:hover,
+    .third-block:focus,
+    .third-block:active {
+        box-shadow: inset 0 0 4vw black;
+    }
+
+    .three-quarter-block {
+        margin: 5vw;
+        width: 60.2vw;
+        min-height: 18vw;
+        box-shadow: inset 0 0 2.5vw black;
+    }
+
+    .three-quarter-block:hover,
+    .three-quarter:focus,
+    .three-quarter:active {
+        box-shadow: inset 0 0 3vw black;
+    }
+
+    .schedule-column {
+        display: inline-flex;
+        padding: 0;
+        margin: 1vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Schedule blocks special blocks meant to be part of a schedule column to form a 5-day schedule.
+     They shouldn't be used next to other types of blocks. */
+    .schedule-block {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 17vw;
+        min-height: 17vw;
+        box-shadow: inset 0 0 2vw black;
+    }
+
+    .schedule-block:hover,
+    .schedule-block:focus,
+    .schedule-block:active {
+        box-shadow: inset 0 0 3vw black;
+    }
+}
+
 /* Animations */
 @keyframes fade-in-animation {
     0% {
@@ -105,7 +220,7 @@ nav a:active {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -126,7 +241,7 @@ nav a:active {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     animation: fade-in-animation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -157,7 +272,7 @@ nav a:active {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         margin: 0;
-        height: 40vw
+        height: 40vw;
     }
 }
 
@@ -254,8 +369,30 @@ nav a:active {
 }
 
 /* About */
-#about {
-    width: 100vw;
+@media (min-width: 1000px) {
+    #about {
+        position: relative;
+        display: flex;
+        margin: auto;
+        padding: 0;
+        width: 96%;
+        align-items: start;
+    }
+}
+
+#about-picture {
+    background-image: url("https://wjsv.github.io/assets/about/about.jpg")
+}
+
+@media (min-width: 1000px) {
+    #schedule {
+        position: relative;
+        display: flex;
+        margin: auto;
+        padding: 0;
+        width: 96%;
+        align-items: start;
+    }
 }
 
 /* Footer */
