@@ -115,6 +115,7 @@ body {
     .quarter-block:focus,
     .quarter-block:active {
         transform: scale( 1.05);
+        -ms-transform: scale( 1.05);
         box-shadow:  0 0 3vw black;
     }
 
@@ -130,6 +131,7 @@ body {
     .third-block:focus,
     .third-block:active {
         transform: scale( 1.05);
+        -ms-transform: scale( 1.05);
         box-shadow: 0 0 4vw black;
     }
 
@@ -144,6 +146,7 @@ body {
     .three-quarter:focus,
     .three-quarter:active {
         transform: scale( 1.05);
+        -ms-transform: scale( 1.05);
         box-shadow:  0 0 3vw black;
     }
 
@@ -158,6 +161,7 @@ body {
     .full-block:focus,
     .full-block:active {
         transform: scale( 1.05);
+        -ms-transform: scale( 1.05);
         box-shadow:  0 0 3vw black;
     }
 
@@ -184,6 +188,7 @@ body {
     .schedule-block:focus,
     .schedule-block:active {
         transform: scale( 1.05);
+        -ms-transform: scale( 1.05);
         box-shadow:  0 0 3vw black;
     }
 }
@@ -414,11 +419,11 @@ nav a:active {
 }
 
 #djs-link {
-    background-image: url("https://wjsv.github.io/assets/links/djs-link.jpg")
+    background-image: url("https://wjsv.github.io/assets/links/djs-link.jpg");
 }
 
 #cc-link {
-    background-image: url("https://wjsv.github.io/assets/links/cc-link.jpg")
+    background-image: url("../assets/links/cc-link.jpg");
 }
 
 /* Upcoming Events */
@@ -431,7 +436,12 @@ nav a:active {
 }
 
 /* DJs */
-#djs h1 {
+#djs-header {
+    background-image: url("https://wjsv.github.io/assets/djs/djs-header.jpg");
+
+}
+
+#djs-header h1 {
     font-size: 10rem;
 }
 
