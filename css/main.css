@@ -32,7 +32,7 @@ body {
     transition: all .2s ease-in-out;
     text-decoration: none;
     background-size: cover;
-    background-color: rgba(212,212,212,0.5);
+    background-color: rgba(147, 19, 36);
 }
 
 @media (max-width: 999px) {
@@ -41,7 +41,7 @@ body {
         width: 75vw;
         min-height: 75vw;
         margin: 4rem auto;
-        box-shadow: inset 0 0 4rem black;
+        box-shadow:  0 0 4rem black;
         justify-content: center;
         flex-direction: column;
     }
@@ -49,11 +49,20 @@ body {
     .block:hover,
     .block:focus,
     .block:active {
-        box-shadow: inset 0 0 10rem black;
+        box-shadow:  0 0 10rem black;
     }
 }
 
 @media (min-width: 1000px) {
+    .block-section {
+        position: relative;
+        display: flex;
+        margin: auto;
+        padding: 0;
+        width: 96%;
+        align-items: start;
+    }
+
     .block {
         display: inline-flex;
         padding: 0;
@@ -66,15 +75,15 @@ body {
     margin: 0;
     padding: 1rem;
     text-align: center;
-    text-shadow: -2px -2px 0 #d4d4d4, 2px -2px 0 #d4d4d4, -2px 2px 0 #d4d4d4, 2px 2px 0 #d4d4d4;
-    color: #931324;
+    text-shadow: -3px -3px 0 #656565, 3px -3px 0 #656565, -3px 3px 0 #656565, 3px 3px 0 #656565;
+    color: #d4d4d4;
 }
 
 .block h2 {
     margin: 0;
     padding: 1rem 1rem 0.5rem;
     text-align: left;
-    color: #931324;
+    color: #d4d4d4;
 }
 
 .block h3 {
@@ -83,14 +92,14 @@ body {
     padding-right: 1rem;
     text-align: left;
     font-weight: 400;
-    color: #931324;
+    color: #d4d4d4;
 }
 
 .block p {
     margin: 0;
     padding: 0.5rem 1rem 1rem;
     text-align: left;
-    color: #931324;
+    color: #d4d4d4;
 }
 
 @media (min-width: 1000px) {
@@ -98,41 +107,58 @@ body {
         margin: 5vw;
         width: 18vw;
         min-height: 18vw;
-        box-shadow: inset 0 0 2.5vw black;
+        box-shadow:  0 0 2.5vw black;
         align-items: center;
     }
 
     .quarter-block:hover,
     .quarter-block:focus,
     .quarter-block:active {
-        box-shadow: inset 0 0 3vw black;
+        transform: scale( 1.05);
+        box-shadow:  0 0 3vw black;
     }
 
     .third-block {
         margin: 5vw;
         width: 22.5vw;
-        min-height: 22.5vw;
-        box-shadow: inset 0 0 3vw black;
+        min-height: 21.7vw;
+        box-shadow: 0 0 3vw black;
         align-items: center;
     }
 
     .third-block:hover,
     .third-block:focus,
     .third-block:active {
-        box-shadow: inset 0 0 4vw black;
+        transform: scale( 1.05);
+        box-shadow: 0 0 4vw black;
     }
 
     .three-quarter-block {
         margin: 5vw;
         width: 60.2vw;
         min-height: 18vw;
-        box-shadow: inset 0 0 2.5vw black;
+        box-shadow:  0 0 2.5vw black;
     }
 
     .three-quarter-block:hover,
     .three-quarter:focus,
     .three-quarter:active {
-        box-shadow: inset 0 0 3vw black;
+        transform: scale( 1.05);
+        box-shadow:  0 0 3vw black;
+    }
+
+    .full-block {
+        margin: 5vw;
+        width: 90vw;
+        min-height: 18vw;
+        box-shadow:  0 0 2.5vw black;
+    }
+
+    .full-block:hover,
+    .full-block:focus,
+    .full-block:active {
+        transform: scale( 1.05);
+        box-shadow:  0 0 3vw black;
     }
 
     .schedule-column {
@@ -151,13 +177,14 @@ body {
         margin-bottom: 1vw;
         width: 17vw;
         min-height: 17vw;
-        box-shadow: inset 0 0 2vw black;
+        box-shadow:  0 0 2vw black;
     }
 
     .schedule-block:hover,
     .schedule-block:focus,
     .schedule-block:active {
-        box-shadow: inset 0 0 3vw black;
+        transform: scale( 1.05);
+        box-shadow:  0 0 3vw black;
     }
 }
 
@@ -369,30 +396,43 @@ nav a:active {
 }
 
 /* About */
-@media (min-width: 1000px) {
-    #about {
-        position: relative;
-        display: flex;
-        margin: auto;
-        padding: 0;
-        width: 96%;
-        align-items: start;
-    }
-}
-
 #about-picture {
-    background-image: url("https://wjsv.github.io/assets/about/about.jpg")
+    background-image: url("https://wjsv.github.io/assets/about/about.jpg");
 }
 
-@media (min-width: 1000px) {
-    #schedule {
-        position: relative;
-        display: flex;
-        margin: auto;
-        padding: 0;
-        width: 96%;
-        align-items: start;
-    }
+#about-text h2 {
+    font-size: 3rem;
+}
+
+/* Links */
+#links h1 {
+    font-size: 4rem;
+}
+
+#shows-link {
+    background-image: url("https://wjsv.github.io/assets/links/shows-link.jpg")
+}
+
+#djs-link {
+    background-image: url("https://wjsv.github.io/assets/links/djs-link.jpg")
+}
+
+#cc-link {
+    background-image: url("https://wjsv.github.io/assets/links/cc-link.jpg")
+}
+
+/* Upcoming Events */
+#upcoming-events-text h2 {
+    font-size: 3rem;
+}
+
+#upcoming-events-photo {
+    background-image: url("../assets/upcoming-events/upcoming-events.jpg");
+}
+
+/* DJs */
+#djs h1 {
+    font-size: 10rem;
 }
 
 /* Footer */
