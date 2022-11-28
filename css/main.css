@@ -262,7 +262,7 @@ nav a:active {
     #background-video { display: none; }
     body {
         background-image: url("https://wjsv.github.io/assets/video-background/poster.jpg");
-        background-size: 100vw;
+        background-size: auto 100vh;
         background-attachment: fixed;
     }
 }
