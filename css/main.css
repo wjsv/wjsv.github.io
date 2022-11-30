@@ -32,16 +32,17 @@ body {
     transition: all .2s ease-in-out;
     text-decoration: none;
     background-size: cover;
+    background-position: center;
     background-color: rgba(147, 19, 36);
 }
 
 @media (max-width: 999px) {
     .block {
         display: flex;
-        width: 75vw;
-        min-height: 75vw;
-        margin: 4rem auto;
-        box-shadow:  0 0 4rem black;
+        width: 90vw;
+        min-height: 90vw;
+        margin: 1rem auto;
+        box-shadow:  0 0 1rem black;
         justify-content: center;
         flex-direction: column;
     }
@@ -49,7 +50,7 @@ body {
     .block:hover,
     .block:focus,
     .block:active {
-        box-shadow:  0 0 10rem black;
+        box-shadow:  0 0 2rem black;
     }
 }
 
@@ -57,9 +58,9 @@ body {
     .block-section {
         position: relative;
         display: flex;
-        margin: auto;
+        margin: 0;
         padding: 0;
-        width: 96%;
+        width: 100%;
         align-items: start;
     }
 
@@ -310,18 +311,26 @@ nav a:active {
 
 /* Header: Contact */
 .contact-icons {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 @media (max-width: 999px) {
     .contact-icons {
-        display: none;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact-icons {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 }
 
@@ -333,13 +342,24 @@ nav a:active {
 
 .contact-icons img {
     transition: all .3s ease-in-out;
-    width: 5vw;
 }
 
 .contact-icons img:hover,
 .contact-icons img:focus,
 .contact-icons img:active {
     opacity: 0.7;
+}
+
+@media (max-width: 999px) {
+    .contact-icons img {
+        width: 5vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact-icons img {
+        width: 5vw;
+    }
 }
 
 /* Header: Listen Live */
@@ -415,7 +435,7 @@ nav a:active {
 }
 
 #shows-link {
-    background-image: url("https://wjsv.github.io/assets/links/shows-link.jpg")
+    background-image: url("https://wjsv.github.io/assets/links/shows-link.jpg");
 }
 
 #djs-link {
@@ -438,13 +458,32 @@ nav a:active {
 /* DJs */
 #djs-header {
     background-image: url("https://wjsv.github.io/assets/djs/djs-header.jpg");
-
 }
 
 #djs-header h1 {
     font-size: 10rem;
 }
 
+.dj-bio {
+    background-color: #656565;
+    text-shadow: 0 0 15px #656565;
+    color: #931324;
+}
+
+.dj-bio h1, h2, h3, p {
+    color: #931324;
+}
+
+#isis-bookhart {
+    background-image: url("https://wjsv.github.io/assets/links/djs-link.jpg");
+}
+
 /* Footer */
 #footer {
+    background-color: #656565;
+    color: #d4d4d4;
+}
+
+#footer a {
+    color: #931324;
 }
